@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/picrossboard/static/css/main.68a258b4.css",
-    "main.js": "/picrossboard/static/js/main.dc82af27.js",
-    "static/media/x-border.svg": "/picrossboard/static/media/x-border.ce095989673793ed944f.svg",
-    "index.html": "/picrossboard/index.html",
-    "static/media/x-crossout.svg": "/picrossboard/static/media/x-crossout.aeccf96c16b00e11b56babe232b91cb4.svg",
-    "static/media/x-single-crossout.svg": "/picrossboard/static/media/x-single-crossout.cfcb4fde675a477b5ff24b8d9df36e0d.svg",
-    "main.68a258b4.css.map": "/picrossboard/static/css/main.68a258b4.css.map",
-    "main.dc82af27.js.map": "/picrossboard/static/js/main.dc82af27.js.map"
+    "main.css": "/PicrossBoard/static/css/main.72b0bd53.css",
+    "main.js": "/PicrossBoard/static/js/main.1bf902d2.js",
+    "static/media/x-border.svg": "/PicrossBoard/static/media/x-border.ce095989673793ed944f.svg",
+    "index.html": "/PicrossBoard/index.html",
+    "static/media/x-crossout.svg": "/PicrossBoard/static/media/x-crossout.aeccf96c16b00e11b56babe232b91cb4.svg",
+    "static/media/x-single-crossout.svg": "/PicrossBoard/static/media/x-single-crossout.cfcb4fde675a477b5ff24b8d9df36e0d.svg",
+    "main.72b0bd53.css.map": "/PicrossBoard/static/css/main.72b0bd53.css.map",
+    "main.1bf902d2.js.map": "/PicrossBoard/static/js/main.1bf902d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.68a258b4.css",
-    "static/js/main.dc82af27.js"
+    "static/css/main.72b0bd53.css",
+    "static/js/main.1bf902d2.js"
   ]
 }
