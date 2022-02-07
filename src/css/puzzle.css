@@ -1,0 +1,265 @@
+.puzzle-board {
+    display: flex;
+    flex-flow: column nowrap;
+    height: fit-content;
+    width: fit-content;
+}
+
+.puzzle-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.puzzle-container>* {
+    user-select: none;
+}
+
+.puzzle-container-column {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.puzzle-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.puzzle-row>* {
+    box-shadow: 0px 0px 0px 1px rgb(200, 200, 200);
+}
+
+.puzzle-cell:nth-child(5n) {
+    box-shadow: 0px 0px 0px 1px rgb(200, 200, 200);
+}
+
+.puzzle-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.puzzle-column-keys-container {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 0px 1px rgb(100, 100, 100);
+}
+
+.puzzle-row-keys-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 1px rgb(100, 100, 100);
+}
+
+.puzzle-column-keys {
+    display: flex;
+    flex-direction: column;
+}
+
+.puzzle-column-keys:nth-child(2n) {
+    background-color: rgb(251, 255, 221);
+}
+
+.puzzle-column-keys:nth-child(2n+1) {
+    background-color: rgb(222, 253, 119);
+}
+
+.puzzle-row-keys:nth-child(2n) {
+    background-color: rgb(251, 255, 221);
+}
+
+.puzzle-row-keys:nth-child(2n+1) {
+    background-color: rgb(222, 253, 119);
+}
+
+.puzzle-column-keys:nth-child(5n + 1) {
+    box-shadow: -1px 0px 0px 0px rgb(100, 100, 100);
+}
+
+.puzzle-column-keys:last-child {
+    box-shadow: 1px 0px 0px 0px rgb(100, 100, 100);
+}
+
+.puzzle-row-keys:nth-child(5n + 1) {
+    box-shadow: 0px -1px 0px 0px rgb(100, 100, 100);
+}
+
+.puzzle-row-keys:last-child {
+    box-shadow: 0px 1px 0px 0px rgb(100, 100, 100);
+}
+
+.puzzle-row-keys {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.puzzle-keys-cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puzzle-keys-cell--crossed-out {
+    color: gray;
+}
+
+.puzzle-cell {
+    position: relative;
+}
+
+.puzzle-cell--filled {
+    background-color: black;
+}
+
+.puzzle-cell--highlighted {
+    background-color: white;
+}
+
+.puzzle-cell--highlighted-secondary {
+    background-color: rgb(235, 235, 235);
+}
+
+.cell-cross-out {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    filter: invert(60%) sepia(0%) saturate(0%) hue-rotate(167deg) brightness(92%) contrast(84%);
+}
+
+.cell-error-cross {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    filter: invert(10%) sepia(93%) saturate(7491%) hue-rotate(359deg) brightness(96%) contrast(111%);
+}
+
+.key-cross-out {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    z-index: 2;
+    filter: invert(55%) sepia(42%) saturate(0%) hue-rotate(140deg) brightness(84%) contrast(83%);
+}
+
+.key-highlight {
+    position: absolute;
+    box-shadow: 0px 0px 0px 1px rgb(100, 100, 100);
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+.key-text {
+    z-index: 1;
+}
+
+.puzzle-sidebar {
+    background-color: rgb(222, 253, 119);
+    box-shadow: 0px 0px 0px 1px rgb(100, 100, 100);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+    width: fit-content;
+    align-items: center;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.button {
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    user-select: none;
+    text-align: center;
+    padding: 10px 5px 0px 5px;
+    background-color: rgb(222, 253, 119);
+    box-shadow:
+        0px 0px 0px 1px black,
+        2px 2px 0px 0px rgb(100, 100, 100);
+}
+
+.puzzle-button {
+    width: 200px;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.button:active {
+    padding: 15px 5px 0px 15px;
+}
+
+#puzzle-timer {
+    padding: 5px 5px 5px 5px;
+    font-weight: 600;
+}
+
+.like-button-container {
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.like-button-image {
+    height: 30px;
+    width: 30px;
+}
+
+.input-field {
+    margin-top: 10px;
+    background-color: rgb(222, 253, 119);
+    font-family: 'Courier Prime', monospace;
+    width: 100px;
+    height: 30px;
+    border: none;
+    box-shadow:
+    0px 0px 0px 1px black,
+    2px 2px 0px 0px rgb(100, 100, 100);
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.button-spacer {
+    height: 30px;
+}
+
+.like-button-image:hover {
+    filter: drop-shadow(0px 0px 1px black)
+}
+
+.like-counter {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
